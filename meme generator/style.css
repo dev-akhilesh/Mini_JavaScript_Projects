@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #f093fb, #f5576c, #5ee7df, #a8edea);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+    color: black;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* body {
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #af2020, #9c2357);
+} */
+
+.meme-generator {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.meme-generator img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.meme-generator .meme-author {
+  margin: 8px;
+}
+
+.meme-img {
+  width: 500px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* button css */
+.generate-meme-btn {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin-top: 50px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.generate-meme-btn:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.generate-meme-btn:main,
+.generate-meme-btn:focus {
+  user-select: auto;
+}
+
+.generate-meme-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.generate-meme-btn:disabled {
+  cursor: auto;
+}
